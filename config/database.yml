@@ -27,7 +27,7 @@ development:
   database: db_users_api
   pool: 5
   username: postgres
-  password: root
+  password: admin
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
