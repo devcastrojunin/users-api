@@ -14,6 +14,18 @@ module Api
                     render error: {error: "Unable to create user"}, status: 400                    
                 end
             end
+
+            def update
+               user = User.update(user_params)
+               render json: user
+            end
+            
+
+            def show
+                user = User.find(params[:id])
+                render json: user                               
+            end
+            
             
             private
 
